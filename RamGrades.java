@@ -40,6 +40,8 @@ class RamGrades{
         int d = sc.nextInt();
 
         System.out.println((a+b+c+d)/4);
+//    Or you can use below line of code to calculate percentage     
+//      System.out.println((a+b+c+d)*100/400);
                       // Your code here
     }
 }
