@@ -30,16 +30,11 @@ import java.util.*; // contains Collections framework
 
 // don't change the name of this class
 // you can add inner classes if needed
-class RamGrades{
+class Main {
     public static void main (String[] args) {
         Scanner sc = new Scanner(System.in);
-
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        int c = sc.nextInt();
-        int d = sc.nextInt();
-
-        System.out.println((a+b+c+d)/4);
+        int num = sc.nextInt();
+        System.out.println(num * num);
                       // Your code here
     }
 }
