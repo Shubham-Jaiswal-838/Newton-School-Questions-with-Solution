@@ -1,7 +1,5 @@
 /*
 Steps Execution
-Easy
-
 Time Limit: 2 sec
 Memory Limit: 128000 kB
 Problem Statement
@@ -18,8 +16,7 @@ Sample Input :
 2345
 
 Sample Output :
-20
-*/
+20*/
 
 import java.io.*; // for handling input/output
 import java.util.*; // contains Collections framework
