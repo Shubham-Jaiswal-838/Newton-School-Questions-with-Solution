@@ -37,35 +37,32 @@ import java.util.*; // contains Collections framework
 // don't change the name of this class
 // you can add inner classes if needed
 class Main {
-	public static void main (String[] args) {
-                      // Your code here
-            Scanner sc=new Scanner(System.in);
-            int n=sc.nextInt();
-            int arr[]=new int[n];
+    public static void main (String[] args) {
+                Scanner sc = new Scanner(System.in);
+                int n = sc.nextInt();
+                int a[] = new int[n];
+                int b[] = new int[n];
+                long sum= 0;
+                int max = 0;
+                
+                for(int i=0;i<n;i++){
+                    a[i]=sc.nextInt();
+                    sum += a[i];
+                    max = max<a[i]?a[i]:max ; 
 
-          int start =  arr[0];
+                    if (a[i]>=max){
+                        b[i]=0;
+                    }
+                    else{
+                        b[i]= max-a[i];
+                        sum += b[i];
+                    }   
+                }
+                for(int i=0;i<n;i++){
+                    System.out.print(b[i]+" ");
+                }
+                System.out.println();
+                System.out.print(sum);
 
-           int newArr[]=new int[n];
-           long sum=0;
-	
-    
-        for(int i=0;i<n;i++){
-            arr[i]=sc.nextInt();
-            sum+=arr[i];
-
-            if(arr[i]>start){
-                newArr[i]=0;
-                start=arr[i];
-            }else{
-                newArr[i]=start-arr[i];
-                sum+=newArr[i];
-            }
-
-        }
-        for(int i=0;i<n;i++){
-            System.out.print(newArr[i]+" ");
-        }
-        System.out.println();
-        System.out.println(sum);
-	}
-}
+            } 
+    }
