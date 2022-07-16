@@ -1,2 +1,2 @@
 # Newton-School-Questions-with-Solution
-Newton school questions and answer 
+Newton school questions with solution
